@@ -6,8 +6,4 @@ RUN apk add git
 RUN yarn install --pure-lockfile
 COPY . .
 RUN npm run build
-RUN ls /var/www/html/
-
-#STAGE 2
-FROM nginx:1.17.1-alpine
-COPY --from=build /var/www/html/ /var/www/html
+RUN nmp start
