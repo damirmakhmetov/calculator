@@ -10,5 +10,4 @@ RUN ls /var/www/html/
 
 #STAGE 2
 FROM nginx:1.17.1-alpine
-COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /var/www/html/ /var/www/html
