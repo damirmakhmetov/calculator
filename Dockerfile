@@ -5,7 +5,7 @@ RUN apk update
 RUN apk add git
 RUN yarn install --pure-lockfile
 COPY . .
-RUN npm run build-test
+RUN npm run build
 RUN ls /var/www/html/
 
 #STAGE 2
