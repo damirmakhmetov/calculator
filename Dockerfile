@@ -1,4 +1,4 @@
-FROM node:12.20-alpine AS build
+FROM node:alpine3.15 AS build
 WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
 RUN apk update
