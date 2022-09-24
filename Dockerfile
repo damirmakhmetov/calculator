@@ -6,4 +6,4 @@ RUN apk add git
 RUN yarn install --pure-lockfile
 COPY . .
 RUN npm run build
-RUN nmp start
+RUN nmp run start
