@@ -56,7 +56,7 @@ jobs:
           script: |
             echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
             docker pull rebir/i-shymkent:latest
-            docker run i-shymkent:latest
+            docker run rebir/i-shymkent:latest
         
         
       
